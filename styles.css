@@ -18,14 +18,29 @@
   height: 100vh;
 }
 
-.side-container,
-.img-container,
-.form-container {
-  outline: 2px red solid;
-  flex-grow: 3;
+.side-container {
+  width: 5%;
+  background-color: black;
 }
 
-.img-container,
 .form-container {
-  flex-grow: 8;
+  width: 65%;
+  background-color: rgb(244, 239, 239);
+}
+
+.img-container {
+  width: 30%;
+  position: relative;
+}
+
+.bg-img {
+  height: 100vh;
+  background-image: url(./img/milky-way.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.logo {
+  position: absolute;
+  top: 25vh;
 }
