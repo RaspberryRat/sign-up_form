@@ -80,10 +80,6 @@ p {
   box-shadow: 0px 0px 5px darkgray;
   margin-bottom: 3px;
   padding: 10px;
-
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
 }
 
 button {
@@ -118,8 +114,31 @@ legend {
 label,
 input {
   margin-right: 2rem;
-  outline: 1px solid green;
   
 }
 
+input {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 3px;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+li {
+  display: flex;
+  flex-flow: column;
+  padding: 2px;
+  /* TODO working HERE!!! */
+}
 
