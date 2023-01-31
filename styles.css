@@ -54,7 +54,7 @@
 
 .button-container,
 .sign-up-form {
-  height: 30%;
+  height: 31%;
 }
 
 .form-intro,
@@ -82,17 +82,15 @@ p {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 5px darkgray;
   margin-bottom: 3px;
-  padding: 10px;
 }
 
 button {
-  padding: 7px 20px 7px 20px;
+  padding: 10px 25px 10px 25px;
   border-radius: 7px;
   box-shadow: 10px 10px 10px lightgray;
   margin-bottom: 10px;
-  font: 5px;
-  color: var(--font-link-color)
-
+  color: var(--font-link-color);
+  font-size: .8rem;
 }
 
 
@@ -142,12 +140,12 @@ ul {
 
 label {
   margin-bottom: 6px;
+  font-size: 0.8rem;
 }
 
 li {
   display: flex;
   flex-flow: column;
   padding: 2px;
-  /* TODO working HERE!!! */
 }
 
