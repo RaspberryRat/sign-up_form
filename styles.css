@@ -52,6 +52,7 @@
   position: absolute;
   top: 25vh;
   filter: contrast(500%);
+  width: 100%;
 
 }
 
