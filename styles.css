@@ -9,12 +9,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: 1rem "immortal", sans-serif;
+  font: 1.3rem "immortal", sans-serif;
   --font-link-color: #4874ee;
   --font-link-hover-color: #0c2365;
   --font-link-focus-color: green;
   --valid-box-color: green;
   --error-box-color: red;
+  --standard-blue-color: #a1b6ed;
 }
 
 .container {
@@ -137,7 +138,7 @@ input {
   border-radius: 3px;
   border: rgb(207, 207, 207) 1px solid;
 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 input:focus {
@@ -151,6 +152,11 @@ input:valid {
 
 input:invalid {
   border: var(--error-box-color) 2px solid;
+}
+
+input:placeholder-shown {
+  border: var(--standard-blue-color) 2px solid;
+  border-radius: 5px;
 }
 
 ul {
@@ -179,26 +185,51 @@ input + span {
   position: relative;
 }
 
+
 input:invalid + span::after {
   position: absolute;
   /* content: url(./img/warning.png);
  */
  content: "❗";
  bottom: 10px;
- right: -25px;
+ right: -30px;
  padding-left: 1px;
  padding-right: 1px;
 }
+
+
 
 input:valid + span:after {
   position: absolute;
   content: "✅";
   bottom: 10px;
-  right: -25px;
+  right: -35px;
 }
+
+
 
 
 input::placeholder {
   font-size: 0.65rem;
   color: lightgray;
+}
+
+input:focus + span::after {
+  content: " ";
+}
+
+input[type="tel"]:invalid + span:after {
+  position: absolute;
+  content: "Phone number should be in this format: 123-456-7890";
+  font-size: 0.55rem;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  bottom: -2px;
+  left: 0px;
+
+}
+
+input:placeholder-shown + span::after {
+  content: " ";
 }
