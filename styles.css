@@ -196,3 +196,8 @@ input:valid + span:after {
   right: -25px;
 }
 
+
+input::placeholder {
+  font-size: 0.65rem;
+  color: lightgray;
+}
