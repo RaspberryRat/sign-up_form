@@ -221,13 +221,35 @@ input[type="tel"]:invalid + span::before {
   padding: 2px;
   bottom: 0px;
   left: 10px;
+}
 
+input[type="password"]:invalid + span::before {
+  position: absolute;
+  content: "Password must contain 8 characters";
+  font-size: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  bottom: 0px;
+  left: 10px;
+}
+
+input[type="tel"]:focus + span::before,
+input[type="password"]:focus + span::before {
+  content: " ";
+  background-color: var(--form-bg-color);
+  width: 0%;
+  height: 0%;
 }
 
 input[type="tel"]:focus + span::after,
 input[type="text"]:focus + span::after,
 input[type="password"]:focus + span::after,
-input[type="email"]:focus + span::after {
+input[type="email"]:focus + span::after,
+input[type="text"]:placeholder-shown + span::before,
+input[type="email"]:placeholder-shown + span::before,
+input[type="password"]:placeholder-shown + span::before,
+input[type="tel"]:placeholder-shown + span::before  {
   content: " ";
   background-color: var(--form-bg-color);
   width: 0%;
@@ -251,3 +273,4 @@ input:invalid + span::after {
   padding-left: 1px;
   padding-right: 1px;
 }
+
