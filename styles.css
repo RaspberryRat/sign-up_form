@@ -190,16 +190,7 @@ input + span {
 
 
 
-input:invalid + span::after {
-  position: absolute;
-  /* content: url(./img/warning.png);
- */
-  content: "❗";
-  bottom: 20px;
-  right: -30px;
-  padding-left: 1px;
-  padding-right: 1px;
-}
+
 
 
 
@@ -221,15 +212,15 @@ input::placeholder {
 
 
 
-input[type="tel"]:invalid + span::after {
+input[type="tel"]:invalid + span::before {
   position: absolute;
   content: "Phone number should be in this format: 123-456-7890";
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   background-color: black;
   color: white;
   padding: 2px;
-  bottom: -2px;
-  left: 0px;
+  bottom: 0px;
+  left: 10px;
 
 }
 
@@ -250,4 +241,13 @@ input[type="tel"]:placeholder-shown + span::after {
   content: " ";
 }
 
-
+input:invalid + span::after {
+  position: absolute;
+  /* content: url(./img/warning.png);
+ */
+  content: "❗";
+  bottom: 20px;
+  right: -30px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
