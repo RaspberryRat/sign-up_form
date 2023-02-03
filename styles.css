@@ -218,6 +218,18 @@ input[type="tel"]:invalid + span::before {
   width: max-content; 
 }
 
+input[type="text"]:invalid + span::before {
+  position: absolute;
+  content: "Your name cannot include a number";
+  font-size: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  bottom: -1px;
+  left: -145px;
+  width: max-content; 
+}
+
 input[type="password"]:invalid + span::before {
   position: absolute;
   content: "Password must contain 8 characters";
@@ -231,7 +243,8 @@ input[type="password"]:invalid + span::before {
 }
 
 input[type="tel"]:focus + span::before,
-input[type="password"]:focus + span::before {
+input[type="password"]:focus + span::before,
+input[type="text"]:focus + span::before {
   content: " ";
   background-color: var(--form-bg-color);
   width: 0%;
