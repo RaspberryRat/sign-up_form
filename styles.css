@@ -39,7 +39,7 @@
 }
 
 .img-container {
-  width: 30%;
+  width: 25vw;
   position: relative;
 }
 
@@ -59,15 +59,15 @@
 }
 
 .button-container {
-  max-height: 29vh;
+  max-height: 20%;
   display: flex;
   flex-flow: wrap column;
   align-items: flex-start;
 }
 
 .sign-up-form {
-  height: 36%;
-  padding-bottom: 20px;
+  height: 40%;
+  padding-bottom: 5vh;
 }
 
 .form-intro,
@@ -139,8 +139,8 @@ legend {
 input {
   border-radius: 3px;
   border: rgb(207, 207, 207) 1px solid;
-
   margin-bottom: 20px;
+  max-width: 60%;
 }
 
 input:focus {
@@ -163,37 +163,33 @@ input:placeholder-shown {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   display: flex;
   flex-flow: wrap;
   margin-bottom: 3px;
-  padding: 10px;
-  justify-content: space-around;
 }
 
 label {
   margin-bottom: 2px;
   font-size: 0.6rem;
+  align-self: flex-start;
+  margin-left: 108px;
+
 }
 
 li {
   display: flex;
   flex-flow: column;
   padding: 2px;
+  width: 50%;
+  align-items: center;
+  padding: ;
 }
 
 input + span {
   position: relative;
 }
-
-
-
-
-
-
-
-
 
 input:valid + span::after {
   position: absolute;
@@ -203,13 +199,10 @@ input:valid + span::after {
 }
 
 
-
-
 input::placeholder {
   font-size: 0.65rem;
   color: lightgray;
 }
-
 
 
 input[type="tel"]:invalid + span::before {
