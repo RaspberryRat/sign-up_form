@@ -195,7 +195,8 @@ input:valid + span::after {
   position: absolute;
   content: "✅";
   bottom: 20px;
-  right: -35px;
+  right: -180px;
+
 }
 
 
@@ -212,8 +213,9 @@ input[type="tel"]:invalid + span::before {
   background-color: black;
   color: white;
   padding: 2px;
-  bottom: 0px;
-  left: 10px;
+  bottom: -1px;
+  left: -145px;
+  width: max-content;
 }
 
 input[type="password"]:invalid + span::before {
@@ -223,8 +225,9 @@ input[type="password"]:invalid + span::before {
   background-color: black;
   color: white;
   padding: 2px;
-  bottom: 0px;
-  left: 10px;
+  bottom: -1px;
+  left: -145px;
+  width: max-content;
 }
 
 input[type="tel"]:focus + span::before,
@@ -262,7 +265,7 @@ input:invalid + span::after {
  */
   content: "❗";
   bottom: 20px;
-  right: -30px;
+  right: -180px;
   padding-left: 1px;
   padding-right: 1px;
 }
