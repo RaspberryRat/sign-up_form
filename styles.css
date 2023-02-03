@@ -215,7 +215,7 @@ input[type="tel"]:invalid + span::before {
   padding: 2px;
   bottom: -1px;
   left: -145px;
-  width: max-content;
+  width: max-content; 
 }
 
 input[type="password"]:invalid + span::before {
