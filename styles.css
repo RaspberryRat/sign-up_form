@@ -201,8 +201,9 @@ input:valid + span::after {
   position: absolute;
   content: "✅";
   bottom: 20px;
-  right: -180px;
-
+  right: -140px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 
@@ -244,7 +245,7 @@ input[type="password"]:invalid + span::before {
   color: white;
   padding: 2px;
   bottom: -1px;
-  left: -145px;
+  left: -110px;
   width: max-content;
 }
 
@@ -284,8 +285,24 @@ input:invalid + span::after {
  */
   content: "❗";
   bottom: 20px;
-  right: -180px;
+  right: -140px;
   padding-left: 1px;
   padding-right: 1px;
 }
 
+input:valid + span::after {
+  position: absolute;
+  content: "✅";
+  bottom: 20px;
+  right: -140px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.pwd-error-msg {
+  position: relative;
+  align-self: center;
+  font-size: 0.6rem;
+  left: -40px;
+  top: -5px;
+}
