@@ -131,6 +131,15 @@ legend {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 3px;
+}
+
 li {
   display: flex;
   flex-flow: column;
@@ -153,7 +162,6 @@ input {
   margin-bottom: 20px;
   max-width: 60%;
   height: 1.5rem;
-
 }
 
 input:focus {
@@ -162,7 +170,6 @@ input:focus {
 
 input:valid {
   border: var(--valid-box-color) 2px solid; 
-  /* TODO need to update so only checks after user leaves box */
 }
 
 input:invalid {
@@ -172,15 +179,6 @@ input:invalid {
 input:placeholder-shown {
   border: var(--standard-blue-color) 2px solid;
   border-radius: 5px;
-}
-
-ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  display: flex;
-  flex-flow: wrap;
-  margin-bottom: 3px;
 }
 
 input + span {
@@ -196,12 +194,10 @@ input:valid + span::after {
   padding-right: 1px;
 }
 
-
 input::placeholder {
   font-size: 0.65rem;
   color: lightgray;
 }
-
 
 input[type="tel"]:invalid + span::before {
   position: absolute;
@@ -235,7 +231,7 @@ input[type="password"]:invalid + span::before {
   color: white;
   padding: 2px;
   bottom: -1px;
-  left: -110px;
+  left: -118px;
   width: max-content;
 }
 
@@ -271,8 +267,6 @@ input[type="tel"]:placeholder-shown + span::after {
 
 input:invalid + span::after {
   position: absolute;
-  /* content: url(./img/warning.png);
- */
   content: "❗";
   bottom: 20px;
   right: -145px;
@@ -284,7 +278,7 @@ input:valid + span::after {
   position: absolute;
   content: "✅";
   bottom: 20px;
-  right: -145px;
+  right: -150px;
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -293,6 +287,6 @@ input:valid + span::after {
   position: relative;
   align-self: center;
   font-size: 0.6rem;
-  left: -40px;
+  left: -35px;
   top: -5px;
 }
