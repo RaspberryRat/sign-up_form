@@ -25,11 +25,6 @@
   max-height: 50%;
 }
 
-.side-container {
-  max-width: 5%;
-  background-color: black;
-}
-
 .form-container {
   width: 65%;
   background-color: var(--form-bg-color);
@@ -56,7 +51,6 @@
   top: 25vh;
   filter: contrast(500%);
   width: 100%;
-
 }
 
 .button-container {
@@ -77,9 +71,6 @@
 .sign-up-form {
   height: 40%;
   padding-bottom: 5vh;
-}
-
-input {
 }
 
 .form-intro,
@@ -140,6 +131,22 @@ legend {
   width: 100%;
 }
 
+li {
+  display: flex;
+  flex-flow: column;
+  padding: 2px;
+  width: 50%;
+  align-items: center;
+}
+
+label {
+  position: relative;
+  margin-bottom: 2px;
+  font-size: 0.6rem;
+  align-self: flex-start;
+  margin-left: 20%;
+}
+
 input {
   border-radius: 3px;
   border: rgb(207, 207, 207) 1px solid;
@@ -174,23 +181,6 @@ ul {
   display: flex;
   flex-flow: wrap;
   margin-bottom: 3px;
-}
-
-label {
-  margin-bottom: 2px;
-  font-size: 0.6rem;
-  align-self: flex-start;
-  margin-left: 108px;
-
-}
-
-li {
-  display: flex;
-  flex-flow: column;
-  padding: 2px;
-  width: 50%;
-  align-items: center;
-  padding: ;
 }
 
 input + span {
@@ -285,7 +275,7 @@ input:invalid + span::after {
  */
   content: "❗";
   bottom: 20px;
-  right: -140px;
+  right: -145px;
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -294,7 +284,7 @@ input:valid + span::after {
   position: absolute;
   content: "✅";
   bottom: 20px;
-  right: -140px;
+  right: -145px;
   padding-left: 1px;
   padding-right: 1px;
 }
