@@ -141,11 +141,12 @@ legend {
 }
 
 input {
-  height: 1.5rem;
   border-radius: 3px;
   border: rgb(207, 207, 207) 1px solid;
   margin-bottom: 20px;
   max-width: 60%;
+  height: 1.5rem;
+
 }
 
 input:focus {

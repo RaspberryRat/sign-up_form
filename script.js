@@ -2,6 +2,8 @@ const passwordBoxes = document.querySelectorAll("input[type='password']")
 
 const pwdBox = document.getElementById('pwd')
 const confirmPwdBox = document.getElementById('confirm-pwd')
+const pwdListElement = document.querySelector(".pwd-li")
+
 
 
 /* passwordBox.addEventListener('change' () ) */
@@ -24,6 +26,7 @@ function checkPwd() {
   } else {
     pwdBox.style.backgroundColor = "red";
     confirmPwdBox.style.backgroundColor = "red";
+    pwdMismatchWarning;
   }
 }
 
@@ -32,5 +35,16 @@ function clearPwdBoxStyle() {
   confirmPwdBox.style.backgroundColor = "white";
 }
 
+function pwdMismatchWarning() {
+  pwdErrorMsg = document.createElement("p");
+  document.querySelector(".pwd-li").appendChild(pwdErrorMsg);
+
+  pwdErrorMsg.value = "*Password does not match";
+  pwdErrorMsg.style.color = "red";
+}
 
 
+function testCase() {
+  aDiv = document.createElement('div')
+  document.quer
+}
